@@ -35,6 +35,7 @@ pipeline {
         }
       }
     }
+    
     stage('Deploy to staging namespace') {
       steps {
         checkout scm
@@ -43,8 +44,6 @@ pipeline {
         }
       }
     }
-    // DO NOT uncomment until 06_04 Lab
-    /*
     stage('DT Deploy Event') {
       steps {
         container("curl") {
@@ -61,7 +60,6 @@ pipeline {
         }
       }
     }
-    */
     
     // DO NOT uncomment until 10_01 Lab
     /*
