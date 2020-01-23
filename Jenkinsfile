@@ -97,7 +97,7 @@ pipeline {
             }
           }
         }
-        sleep 60
+        sleep 120
       }
     }
 
@@ -131,7 +131,7 @@ pipeline {
           }
         }
         //sleeping to allow data to arrive in Dynatrace
-        sleep 60
+        sleep 120
         perfSigDynatraceReports(
           envId: 'Dynatrace Tenant', 
           nonFunctionalFailure: 2, 
